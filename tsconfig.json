@@ -1,0 +1,31 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "module": "es6",
+    "target": "es6",
+    "outDir": "./build",
+    "watch": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "lib": ["dom", "es5", "es2015.promise"],
+    "sourceMap": true,
+    "pretty": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+    },
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "es6",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true
+    }
+},
+}

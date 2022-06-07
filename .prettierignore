@@ -1,0 +1,8 @@
+src/bin/
+src/migrations/
+src/models/
+src/public/
+src/views/
+node_modules/
+.eslintrc.js
+build.sh
