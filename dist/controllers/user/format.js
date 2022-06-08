@@ -1,7 +1,5 @@
-"use strict";
-exports.__esModule = true;
-var format = {
-    getParams: function (query) {
+const format = {
+    getParams(query) {
         return {
             page: query.page || 1,
             pageSize: query.pageSize || 10,
@@ -9,4 +7,5 @@ var format = {
         };
     }
 };
-exports["default"] = format;
+export default format;
+//# sourceMappingURL=format.js.map

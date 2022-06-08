@@ -11,7 +11,7 @@
     "test": "cross-env NODE_ENV=test nodemon src/index.js",
     "beta": "cross-env NODE_ENV=beta nodemon src/index.js",
     "prod": "cross-env NODE_ENV=production nodemon src/index.js",
-    "build": "tsc src/*.ts --outDir build"
+    "build": "tsc src/* --outDir build --resolveJsonModule true --allowJs true"
   },
   "dependencies": {
     "@gw/eslint-config-gw": "1.0.23",

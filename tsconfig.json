@@ -1,13 +1,14 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "types/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "allowJs": true,
     "module": "es6",
     "target": "es6",
-    "outDir": "./build",
+    "outDir": "dist",
     "watch": true,
     "moduleResolution": "node",
     "isolatedModules": true,
@@ -18,14 +19,23 @@
     "paths": {
       "@/*": ["src/*"],
     },
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
   },
   "ts-node": {
+    "include": ["src/**/*", "types/*"],
     "compilerOptions": {
       "module": "es6",
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "typeRoots": [
+        "./node_modules/@types",
+        "./types"
+      ],
     }
-},
+  }
 }

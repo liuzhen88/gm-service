@@ -9,12 +9,10 @@ import { Query } from "./dto";
 class UserController extends Base {
 
   req: Request;
-  res: Response;
 
   constructor(req: Request, res: Response) {
     super(req, res);
     this.req = req;
-    this.res = res;
   }
 
   /**
@@ -22,6 +20,7 @@ class UserController extends Base {
    * @see GET /action
    */
   Get(query: Query) {
+    console.log(this.req.db)
     this.ReponseSuccess();
   }
 
