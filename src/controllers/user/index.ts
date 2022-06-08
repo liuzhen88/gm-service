@@ -20,7 +20,7 @@ class UserController extends Base {
    * @see GET /action
    */
   Get(query: Query) {
-    console.log(this.req.db, query)
+    console.log(this.req.db)
     this.ReponseSuccess();
   }
 
