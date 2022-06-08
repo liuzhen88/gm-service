@@ -2,40 +2,20 @@
   "include": ["src/**/*", "types/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
     "allowJs": true,
-    "module": "es6",
-    "target": "es6",
     "outDir": "dist",
-    "watch": true,
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "lib": ["dom", "es5", "es2015.promise"],
+    "target": "es2017",
+    "moduleResolution": "Node",
     "sourceMap": true,
-    "pretty": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
     },
-    "esModuleInterop": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "./types"
-    ],
-  },
-  "ts-node": {
-    "include": ["src/**/*", "types/*"],
-    "compilerOptions": {
-      "module": "es6",
-      "moduleResolution": "node",
-      "allowSyntheticDefaultImports": true,
-      "esModuleInterop": true,
-      "typeRoots": [
-        "./node_modules/@types",
-        "./types"
-      ],
-    }
+    "esModuleInterop": true
   }
 }
